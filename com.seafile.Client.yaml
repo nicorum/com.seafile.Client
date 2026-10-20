@@ -87,6 +87,7 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -D CMAKE_POLICY_VERSION_MINIMUM=3.5
+      - -D BUILD_SHIBBOLETH_SUPPORT=ON
     post-install:
       - install -Dm644 com.seafile.Client.metainfo.xml -t $FLATPAK_DEST/share/metainfo/
     sources:
